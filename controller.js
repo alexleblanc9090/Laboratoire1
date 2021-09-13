@@ -49,7 +49,7 @@ exports.showFormula = function(req, res)
     res.statusCode = 200;
     res.setHeader('content-Type', 'Application/json');
 
-    const formulas = 
+    /*const formulas = 
     {
         Addition : "api/math?op=+&x=50&y=25",
         Soustraction : "api/math?op=-&x=50&y=25",
@@ -59,9 +59,10 @@ exports.showFormula = function(req, res)
         Fractionnel : "api/math?op=!&n=5",
         Premier : "api/math?op=p&n=5",
         TrouverPremier : "api/math?op=np&n=5"
-    };
+    };*/
 
-    res.end(JSON.stringify(formulas));
+    message = "Vous devez tapez /api/maths avec votre formule."; 
+    res.end(JSON.stringify(message));
 
 
 }
