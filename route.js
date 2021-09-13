@@ -8,6 +8,10 @@ module.exports = http.createServer((req, res) =>{
     {
         mathsOps.executeRequest(req, res);
     }
+    else if(url.parse(req.url, true).pathname == "/api/maths" && req.method == 'GET')
+    {
+        mathsOps.showFormula();
+    }
     else{
         mathsOps.invalidUrl(req, res);
     }

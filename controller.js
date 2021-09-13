@@ -44,6 +44,27 @@ exports.invalidUrl = function (req, res) {
     res.end(JSON.stringify(response))
 }
 
+exports.showFormula() = function()
+{
+    res.statusCode = 200;
+    res.setHeader('content-Type', 'Application/json');
+
+    const formulas = 
+    {
+        Addition : "api/math?op=+&x=50&y=25",
+        Soustraction : "api/math?op=-&x=50&y=25",
+        Multiplication : "api/math?op=*&x=50&y=25",
+        Divisiom : "api/math?op=/&x=50&y=25",
+        Modulo : "api/math?op=%&x=50&y=7",
+        Fractionnel : "api/math?op=!&n=5",
+        Premier : "api/math?op=p&n=5",
+        TrouverPremier : "api/math?op=np&n=5"
+    };
+
+    res.end(JSON.stringify(formulas));
+
+
+}
 
 //------------------------------------- MÉTHODE -------------------------------------------
 const availableEndpoint = [
