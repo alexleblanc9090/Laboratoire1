@@ -1,0 +1,15 @@
+{
+  "name": "modeltechsimulation",
+  "version": "1.0.0",
+  "description": "Serveur qui fait la simulation de notre vrai API pour notre projet ModelTech",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Alexandre Leblanc",
+  "license": "ISC",
+  "dependencies": {
+    "query-string": "^7.0.1"
+  }
+}
