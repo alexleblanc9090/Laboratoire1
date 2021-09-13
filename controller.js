@@ -44,7 +44,7 @@ exports.invalidUrl = function (req, res) {
     res.end(JSON.stringify(response))
 }
 
-exports.showFormula() = function()
+exports.showFormula = function(req, res)
 {
     res.statusCode = 200;
     res.setHeader('content-Type', 'Application/json');
